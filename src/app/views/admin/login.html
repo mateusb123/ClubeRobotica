@@ -19,9 +19,30 @@
     <form method="post">
         <h2>Sing in</h2>
         <input type="text" name="user" autocomplete="off" placeholder="User">
-        <input type="password" name="password" placeholder="Password">
+        <div><input type="password" name="password" placeholder="Password"><i class="fas fa-eye"></i></div>
         <input type="submit" value="Login">
     </form>
 
+    <script>
+        const icon = document.querySelector('form div i');
+        const inputPassword = document.querySelector('form div input');
+        const inputSubmit = document.querySelector('form input[type="submit"]');
+         
+        inputSubmit.addEventListener('click', function(e){
+            inputPassword.type = 'password';
+        })
+        icon.addEventListener('click', function(){
+            if(icon.className == 'fas fa-eye') {
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+                inputPassword.type = 'text';
+            }
+            else if(icon.className == 'fas fa-eye-slash') {
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+                inputPassword.type = 'password';
+            }
+        });
+    </script>
 </body>
 </html>

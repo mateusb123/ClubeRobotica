@@ -35,7 +35,7 @@ form {
 form > h2 {
     text-align: center;
 }
-form > input[type="text"],input[type="password"] {
+form input[type="text"],input[type="password"] {
     width: 98%;
     height: 55px;
     border-radius: 5px;
@@ -54,5 +54,16 @@ form > input[type="submit"] {
     font-size: 20px;
     color: white;
     margin-top: 45px;
+}
+form > div {
+    position: relative;
+    display: flex;
+}
+form > div i {
+    position: relative;
+    top: 45px;
+    cursor: pointer;
+    font-size: 25px;
+    right: 39px;
 }
 /* ***** */
