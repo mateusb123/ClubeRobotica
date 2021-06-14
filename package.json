@@ -1,0 +1,19 @@
+{
+  "name": "projetorobotica",
+  "version": "1.0.0",
+  "description": "Ola esse site sera um projeto para o nosso clube de robotica.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusb123/ClubeRobotica.git"
+  },
+  "author": "Mateus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusb123/ClubeRobotica/issues"
+  },
+  "homepage": "https://github.com/mateusb123/ClubeRobotica#readme"
+}
