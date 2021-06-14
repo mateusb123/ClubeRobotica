@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    background: rgb(238, 238, 238);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* login */
+header {
+    width: 100%;
+    padding: 25px 0;
+    background: rgb(5, 145, 201);
+}
+header .logo h2 {
+    color: white;
+    text-align: center;
+}
+form {
+    width:40%;
+    height: 60%;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 19px;
+    padding: 25px 2%;
+}
+form > h2 {
+    text-align: center;
+}
+form > input[type="text"],input[type="password"] {
+    width: 98%;
+    height: 55px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 19px;
+    margin-top: 30px;
+    outline: none;
+}
+form > input[type="submit"] {
+    background-image: linear-gradient(to left, #12CBC4,#1281cb,#0652DD);
+    border:none;
+    width: 98%;
+    height: 55px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    margin-top: 45px;
+}
+/* ***** */
