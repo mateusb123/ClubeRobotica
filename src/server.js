@@ -14,9 +14,11 @@ app.set('view engine', 'html');
 app.use(express.static(path.join(__dirname, 'app/public')));
 app.set('views', path.join(__dirname, 'app/views'));
 
-app.use('/', (req,res) => {
-    res.render('home/index.html');
-});
+const routerHome = require('./app/routes/home');
+const routerAdmin = require('./app/routes/admin');
+
+routerAdmin(app);
+routerHome(app);
 
 server.listen(3000, () => {
     console.log('server running : 3000');
