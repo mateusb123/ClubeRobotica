@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/mateusb123/ClubeRobotica/issues"
   },
-  "homepage": "https://github.com/mateusb123/ClubeRobotica#readme"
+  "homepage": "https://github.com/mateusb123/ClubeRobotica#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
 }
